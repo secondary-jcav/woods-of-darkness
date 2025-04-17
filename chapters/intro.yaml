@@ -1,0 +1,57 @@
+start:
+  text: |
+    “Ahh, here we are.” You step out of the car and take a deep breath.
+    The smells of the pines filled the air as wind swept down off the mountains. “The Woods of Darkness.”
+  choices:
+    "1":
+      description: “Look at your companion”
+      next_scene: livia_intro
+    "2":
+      description: “Start unpacking”
+      next_scene: tree_top
+
+livia_intro:
+  text: |
+    “I still don’t get why it’s called the ‘Woods of Darkness.’” Livia climbs out of the passenger’s seat,
+    then walks around to the trunk, where she begins to unload the camping supplies.
+    “There’s nothing that dark about it. It’s just an ordinary patch of woods.”
+  choices:
+    "1":
+      description: “Explain about the woods”
+      next_scene: monster_description
+
+monster_description:
+  text: |
+    “An ordinary patch of woods home to the most fearsome monster the world has ever seen!” You say, grinning.
+    “My grandpa told me all about it! It has horns, and thick wool filled with tree branches, leaves, and the bones of its victims!”
+    “You grandpa tells you all sorts of things.” Livia sighs and slings a backpack over her shoulders.
+    “In any case, we’re here. You drug me out. Whoopee. Now, where are we camping?"
+  choices:
+    "1":
+      description: “The campsite!”
+      next_scene: campsite
+    "2":
+      description: “The woods!”
+      next_scene: the_woods
+
+campsite:
+  text: |
+    “Oh, we’re camping in the campsite.”
+    You start walking out of the parking lot toward the marked location for tents and campfires.
+    “After all, that’s where a monster is most likely to attack!”
+    Livia rolls her eyes, but follows you. Soon, you have your tents pitched in the small clearing.
+  choices:
+    "1":
+      description: “”
+      next_scene: campsite
+
+the_woods:
+  text: |
+    “We’re going straight to the center of the woods!” You declare loudly.
+    “That’s the place we’re most likely to see the monster just wandering through the woods!”
+    “And if we get in trouble for camping in a non-designated area?”
+    “Just part of the experience!” You strike off into the woods, with Livia following closely behind.
+  choices:
+    "1":
+      description: “”
+      next_scene: campsite
