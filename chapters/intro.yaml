@@ -4,11 +4,12 @@ start:
     The smells of the pines filled the air as wind swept down off the mountains. “The Woods of Darkness.”
   choices:
     "1":
-      description: “Look at your companion”
+      description: Look at your companion
       next_scene: livia_intro
     "2":
-      description: “Start unpacking”
+      description: Start unpacking
       next_scene: tree_top
+
 
 livia_intro:
   text: |
@@ -17,8 +18,9 @@ livia_intro:
     “There’s nothing that dark about it. It’s just an ordinary patch of woods.”
   choices:
     "1":
-      description: “Explain about the woods”
+      description: Explain about the woods
       next_scene: monster_description
+
 
 monster_description:
   text: |
@@ -28,11 +30,12 @@ monster_description:
     “In any case, we’re here. You drug me out. Whoopee. Now, where are we camping?"
   choices:
     "1":
-      description: “The campsite!”
+      description: The campsite!
       next_scene: campsite
     "2":
-      description: “The woods!”
+      description: The woods!
       next_scene: the_woods
+
 
 campsite:
   text: |
@@ -45,6 +48,7 @@ campsite:
       description: “”
       next_scene: campsite
 
+
 the_woods:
   text: |
     “We’re going straight to the center of the woods!” You declare loudly.
@@ -53,5 +57,154 @@ the_woods:
     “Just part of the experience!” You strike off into the woods, with Livia following closely behind.
   choices:
     "1":
-      description: “”
+      description: Return to campsite instead
       next_scene: campsite
+    "2":
+      description: Find a clearing in the woods
+      next_scene: camping_in_the_woods
+
+
+camping_in_the_woods:
+  text: |
+    It takes the two of you the better part of half an hour to find a suitable clearing, where the trees parted just enough for them to pitch your two tents.
+    As the night begins to fall about you, you sit down and begin to eat their marshmallows cold, as you don't want to risk a fire.
+    Suddenly, though, a scream echoes through the air, coming from only a short distance away from the tents!
+    You leapt to your feet, a smile spreading across your face.
+  choices:
+    "1":
+      description: Go investigate!
+      next_scene: investigate_the_noise
+    "2":
+      description: Bunker down in the tent!
+      next_scene: to_the_tents
+    "3":
+      description: Make a monster trap!
+      next_scene: camping_in_the_woods
+
+
+investigate_the_noise:
+  text: |
+    “Come on!” You race off into the woods, leaving the comfort of the tents behind.
+    Livia follows closely, her breathing ragged as she races through the woods.
+    In the darkness, you trip over fallen logs, sprawled across gnarled tree roots, and fall headlong into puddles of mud.
+  choices:
+    "1":
+      description: Give up and go back to the tents
+      next_scene: to_the_tents
+    "2":
+      description: Press on
+      next_scene: monster_discovery
+    "3":
+      description: Make a monster trap!
+      next_scene: make_trap
+
+
+to_the_tents:
+  text: |
+    “Inside the tent!” You order, your bravery evaporating quicker than a drop of water on hot cement.
+    You dive back inside your own tent, and are somehow unsurprised when Livia joins you.
+    You zip the tent shut, and try not to think about the fact that you are only separated from the monster
+    by a piece of fabric that could be knocked over by a strong wind.
+  choices:
+    "1":
+      description: Give up and go back to the tents
+      next_scene: to_the_tents
+    "2":
+      description: Press on
+      next_scene: monster_discovery
+
+
+make_trap:
+  text: |
+    “Quick!” You grab the bag of marshmallows, stick several of them on sticks, and unzip the tent. “Help me!”
+    Livia, for her part, simply dives into her own tent and waits. You quickly set out a number of the tasty treats, then go into Livia’s tent and zip it up.
+    You clutch each other as the screams grow louder, and a number of voices begin to echo through the woods.
+  choices:
+    "1":
+      description: Give up and go back to the tents
+      next_scene: to_the_tents
+    "2":
+      description: Press on
+      next_scene: monster_discovery
+
+
+monster_discovery:
+  text: |
+    You grab a flashlight off your belt, point it forward, and flick the switch on.
+    To your immense surprise, you find a rather hairy creature with the lower body of a sheep and the upper body of a man.
+    To your even greater surprise, the creature is dangling upside-down from a snare, and kicking and screaming wildly.
+    “Get me down!” It calls out loudly. “I don’t want to be eaten!”
+  choices:
+    "1":
+      description: Cut the thing down
+      next_scene: help_monster
+    "2":
+      description: Leave it to dangle
+      next_scene: leave_monster_dangling
+
+
+help_monster:
+  text: |
+    “Oh, thank you!” The monster gasps as you pull out a pocketknife and cut him down. “Thank you thank you thank you! Now run, before they catch you, too!” 
+    The monster turns and bounds into the woods, making it three steps before he steps into a second snare.
+    There is a sharp twang, and with a rush of wind and leaves, the sheep-man is slung up into the air once more.
+    His head smacked against the trunk of the tree, and he slumps, unconscious.
+  choices:
+    "1":
+      description: Help the monster one more time
+      next_scene: help_monster_again
+    "2":
+      description: Leave it to dangle
+      next_scene: monster_discovery
+
+
+leave_monster_dangling:
+  text: |
+    “No, I think I’ll leave you up there.” You shake your head. “I don’t know why you’re up there, but I’m sure you deserve it.”
+    Suddenly, from deeper in the woods, footsteps begin to echo.
+    The monster howls louder, and a moment later, three men wielding enormous shears and canvas bags come tromping out of the trees.
+    They looked at the two teenagers, and one of them coughs. “Just what are you kids doing here?”
+  choices:
+    "1":
+      description: Face the unknown men
+      next_scene: face_unknown_men
+    "2":
+      description: Flee and regroup
+      next_scene: monster_discovery
+
+
+help_monster_again:
+  text: |
+    More footsteps began to echo from deeper in the woods, and you glance at Livia.
+    You quickly cut the sheep-man down once again, then drag him into a patch of nearby brush.
+    With that, you turn and run, fleeing desperately back down toward your car.
+    After all… If a monster was scared of something, what would the two of you be able to do against it?
+  choices:
+    "1":
+      description: The end!
+      next_scene:
+
+
+face_unknown_men:
+  text: |
+    “We’re… Ahh… What are you doing here?” You counter.
+    “We’re with the Monster Management Agency.” The leaner shrugs. “It’s our job to catch and shear this guy ever year, and dehorn him if necessary."
+    "Keeps him from getting all wooly and scary, which, of course, cuts down on the number of reported monster sightings,
+     the number of people who get lost in the woods trying to run away from him, and so on."
+    "We’ll only be a few moments, you two can run along.”
+  choices:
+    "1":
+      description: Stand by and watch
+      next_scene: witness_monster_shearing
+
+
+witness_monster_shearing:
+  text: |
+    You and Livia watch, unable to believe what you are seeing, as the three men set upon the monster, and soon enough have him sheared.
+    They then cut him down, and he dashes away in shame.
+    With that, the three agents leave, and you and Livia were left standing in the woods.
+    It is a story that you will never be able to get out of your head… Even if you don't even believe it yourself at this time.
+  choices:
+    "1":
+      description: The end!
+      next_scene:
