@@ -8,7 +8,7 @@ start:
       next_scene: livia_intro
     "2":
       description: Start unpacking
-      next_scene: tree_top
+      next_scene:
 
 
 livia_intro:
@@ -46,7 +46,7 @@ campsite:
   choices:
     "1":
       description: “”
-      next_scene: campsite
+      next_scene:
 
 
 the_woods:
