@@ -1,33 +1,35 @@
 start:
   text: |
-    “Ahh, here we are.” You step out of the car and take a deep breath.
-    The smells of the pines filled the air as wind swept down off the mountains. “The Woods of Darkness.”
+    “Ahh, here we are.” You step out of the car and take a deep breath. 
+    The pines hit your nostrils like over‑enthusiastic air‑freshener, and somewhere a crow coughs apologetically.
+    Livia, still buckled in the passenger seat, watches with the weary stoicism of someone who lost a bet they don’t remember making.
+    Looming above is the weather‑beaten sign **Woods of Darkness**; a smaller hand‑painted notice underneath promises *Now with 30 % more darkness – Money‑back guarantee!* 
+    You clap your hands. Adventure, or at least an anecdote for next Thanksgiving, awaits.
   choices:
     "1":
       description: Look at your companion
       next_scene: livia_intro
     "2":
       description: Start unpacking
-      next_scene:
-
+      next_scene: campsite
 
 livia_intro:
   text: |
-    “I still don’t get why it’s called the ‘Woods of Darkness.’” Livia climbs out of the passenger’s seat,
-    then walks around to the trunk, where she begins to unload the camping supplies.
-    “There’s nothing that dark about it. It’s just an ordinary patch of woods.”
+    “I still don’t get why it’s called the ‘Woods of Darkness.’” Livia climbs out of the passenger seat,
+    immediately shading her eyes as though the trees might dim the sun on cue.
+    She circles to the trunk and begins unloading camping supplies with the air of someone performing community service.
+    “Honestly, it’s just an ordinary patch of woods—minus the hysterical marketing.”
   choices:
     "1":
       description: Explain about the woods
       next_scene: monster_description
 
-
 monster_description:
   text: |
-    “An ordinary patch of woods home to the most fearsome monster the world has ever seen!” You say, grinning.
-    “My grandpa told me all about it! It has horns, and thick wool filled with tree branches, leaves, and the bones of its victims!”
-    “You grandpa tells you all sorts of things.” Livia sighs and slings a backpack over her shoulders.
-    “In any case, we’re here. You drug me out. Whoopee. Now, where are we camping?"
+    “An ordinary patch of woods *home to the most fearsome monster the world has ever seen!*” you announce, grin stretching wider than health guidelines recommend.
+    “My grandpa told me all about it! It has horns, and a thick fleece so matted with branches, leaves, and the *bones of its victims* that it probably gets HBO for free.”
+    Livia snorts. “Your grandpa also claims pigeons are government drones. Color me skeptical.”
+    “In any case,” she sighs, heaving a backpack onto her shoulders, “we’re here. You dragged me out. Whoopee. Now, where are we camping?"
   choices:
     "1":
       description: The campsite!
@@ -36,40 +38,44 @@ monster_description:
       description: The woods!
       next_scene: the_woods
 
-
 campsite:
   text: |
-    “Oh, we’re camping in the campsite.”
-    You start walking out of the parking lot toward the marked location for tents and campfires.
-    “After all, that’s where a monster is most likely to attack!”
-    Livia rolls her eyes, but follows you. Soon, you have your tents pitched in the small clearing.
+    “Oh, we’re camping in the *designated* campsite,” you declare, finger raised like a tour guide nobody hired.
+    “After all, that’s clearly where a monster is most likely to attack—paperwork’s easier.”
+    Livia rolls her eyes but follows you. Soon, your tents are pitched in a clearing marked with a cute sign reading *‘Official Area of Spooky Shenanigans’*.
   choices:
     "1":
-      description: “”
-      next_scene:
-
+      description: Go investigate a suspicious rustling
+      next_scene: investigate_the_noise
+    "2":
+      description: Bunker down in the tent!
+      next_scene: to_the_tents
+    "3":
+      description: Make a monster trap!
+      next_scene: make_trap
+    "4":
+      description: Tell a ghost story to set the mood
+      next_scene: campfire_story
 
 the_woods:
   text: |
-    “We’re going straight to the center of the woods!” You declare loudly.
-    “That’s the place we’re most likely to see the monster just wandering through the woods!”
-    “And if we get in trouble for camping in a non-designated area?”
-    “Just part of the experience!” You strike off into the woods, with Livia following closely behind.
+    “We’re going straight to the heart of the woods!” you proclaim.
+    “That’s where we’ll spot the monster casually jogging its evening 5K.”
+    Livia raises a brow. “And if we get a fine for camping off‑grid?”
+    “Adds authenticity!” You march into the gloom, Livia muttering about bail money behind you.
   choices:
     "1":
       description: Return to campsite instead
-      next_scene: campsite
+      next_scene: campsite_return
     "2":
       description: Find a clearing in the woods
       next_scene: camping_in_the_woods
 
-
 camping_in_the_woods:
   text: |
-    It takes the two of you the better part of half an hour to find a suitable clearing, where the trees parted just enough for them to pitch your two tents.
-    As the night begins to fall about you, you sit down and begin to eat their marshmallows cold, as you don't want to risk a fire.
-    Suddenly, though, a scream echoes through the air, coming from only a short distance away from the tents!
-    You leapt to your feet, a smile spreading across your face.
+    It takes half an hour to locate a clearing where trees politely scoot aside for your tents.
+    Night drips from the canopy; you gnaw cold marshmallows—crunchy, like disappointment—because fire would spoil the ambience *and* attract real campers.
+    Suddenly a scream slices the air. You leap up, wearing a grin normally reserved for roller‑coaster photographers.
   choices:
     "1":
       description: Go investigate!
@@ -79,14 +85,38 @@ camping_in_the_woods:
       next_scene: to_the_tents
     "3":
       description: Make a monster trap!
-      next_scene: camping_in_the_woods
+      next_scene: make_trap
 
+campfire_story:
+  text: |
+    You strike a single dramatic match and hold it beneath your chin. Shadows pirouette across the pines like tipsy ballerinas.
+    “Gather round, Livia,” you whisper. “Behold the tragic saga of *The Woolen Wraith Who Couldn’t Get a Date*.”
+    She groans but sits anyway—because the alternative is assembling the camp stove.
+  choices:
+    "1":
+      description: Spook Livia with a jump‑scare roar
+      next_scene: ghost_prank
+    "2":
+      description: Realize the story might be alarmingly true
+      next_scene: investigate_the_noise
+
+ghost_prank:
+  text: |
+    You bellow, fling the match, and shower Livia with cold marshmallows like paranormal confetti.
+    Her scream curdles milk in a three‑mile radius; her retaliatory boot introduces itself to your ribs.
+    As you wheeze, she announces the ghost story over and heads to bed victorious.
+  choices:
+    "1":
+      description: Sulk and sleep
+      next_scene: to_the_tents
+    "2":
+      description: Apologize and plot future revenge
+      next_scene: campsite_return
 
 investigate_the_noise:
   text: |
-    “Come on!” You race off into the woods, leaving the comfort of the tents behind.
-    Livia follows closely, her breathing ragged as she races through the woods.
-    In the darkness, you trip over fallen logs, sprawled across gnarled tree roots, and fall headlong into puddles of mud.
+    “Come on!” You sprint into the trees, courage slightly outpacing common sense.
+    Livia follows, her breathing ragged. In the dark you trip over roots, logs, and what you *hope* was a very relaxed squirrel.
   choices:
     "1":
       description: Give up and go back to the tents
@@ -98,113 +128,247 @@ investigate_the_noise:
       description: Make a monster trap!
       next_scene: make_trap
 
-
 to_the_tents:
   text: |
-    “Inside the tent!” You order, your bravery evaporating quicker than a drop of water on hot cement.
-    You dive back inside your own tent, and are somehow unsurprised when Livia joins you.
-    You zip the tent shut, and try not to think about the fact that you are only separated from the monster
-    by a piece of fabric that could be knocked over by a strong wind.
+    “Inside the tent!” you bark, bravery dissolving like sugar in tea.
+    You dive into nylon safety; Livia joins, zippering you both inside what is essentially a stubborn plastic bag.
+    You try not to think about the fact the monster could probably slice it open with a stern glance.
   choices:
     "1":
-      description: Give up and go back to the tents
-      next_scene: to_the_tents
-    "2":
-      description: Press on
+      description: Yell for courage and exit tent
       next_scene: monster_discovery
-
+    "2":
+      description: Stay hidden and hope it passes
+      next_scene: monster_attack
 
 make_trap:
   text: |
-    “Quick!” You grab the bag of marshmallows, stick several of them on sticks, and unzip the tent. “Help me!”
-    Livia, for her part, simply dives into her own tent and waits. You quickly set out a number of the tasty treats, then go into Livia’s tent and zip it up.
-    You clutch each other as the screams grow louder, and a number of voices begin to echo through the woods.
+    “Quick!” You snatch the marshmallow bag, skewer a sacrificial few, and arrange them like bait on a mousetrap buffet.
+    Livia sensibly barricades herself in her tent. Outside, the chorus of screams grows louder—accompanied now by what might be banjo music.
   choices:
     "1":
-      description: Give up and go back to the tents
-      next_scene: to_the_tents
-    "2":
-      description: Press on
+      description: Peek outside the tent
       next_scene: monster_discovery
-
+    "2":
+      description: Stay in the tent
+      next_scene: monster_attack
 
 monster_discovery:
   text: |
-    You grab a flashlight off your belt, point it forward, and flick the switch on.
-    To your immense surprise, you find a rather hairy creature with the lower body of a sheep and the upper body of a man.
-    To your even greater surprise, the creature is dangling upside-down from a snare, and kicking and screaming wildly.
-    “Get me down!” It calls out loudly. “I don’t want to be eaten!”
+    You sweep your flashlight forward. Hanging upside‑down from a snare is a creature with the lower body of a sheep and the upper body of a man—nature’s patch note nobody asked for.
+    “Get me down!” it bleats, flailing. “I don’t want to be *eaten!*”
   choices:
     "1":
-      description: Cut the thing down
+      description: Cut the poor thing down
       next_scene: help_monster
     "2":
       description: Leave it to dangle
       next_scene: leave_monster_dangling
+    "3":
+      description: Take a selfie with the monster
+      next_scene: monster_selfie
 
+monster_selfie:
+  text: |
+    Opportunity knocks—well, *dangles*. You whip out your phone, set flash to *nuclear*, and grin beside the captive cryptid.
+    “Cheese!” you say; “Bleat!” it replies. The resulting photo is equal parts nightmare fuel and oddly wholesome.
+  choices:
+    "1":
+      description: Post it immediately—#CryptidCutie
+      next_scene: end_viral
+    "2":
+      description: Maybe rescue the poor thing first
+      next_scene: help_monster
 
 help_monster:
   text: |
-    “Oh, thank you!” The monster gasps as you pull out a pocketknife and cut him down. “Thank you thank you thank you! Now run, before they catch you, too!” 
-    The monster turns and bounds into the woods, making it three steps before he steps into a second snare.
-    There is a sharp twang, and with a rush of wind and leaves, the sheep-man is slung up into the air once more.
-    His head smacked against the trunk of the tree, and he slumps, unconscious.
+    “Oh, thank you!” the monster gasps as your pocketknife slices the rope. “Now run, before they catch you too!”
+    It bounds three heroic steps—straight into another snare. *Twang!* Up it goes, bonking the same tree, inventing new swear words in Sheep‑ish.
   choices:
     "1":
       description: Help the monster one more time
       next_scene: help_monster_again
     "2":
-      description: Leave it to dangle
-      next_scene: monster_discovery
-
+      description: Leave it to dangle (again)
+      next_scene: leave_monster_dangling
 
 leave_monster_dangling:
   text: |
-    “No, I think I’ll leave you up there.” You shake your head. “I don’t know why you’re up there, but I’m sure you deserve it.”
-    Suddenly, from deeper in the woods, footsteps begin to echo.
-    The monster howls louder, and a moment later, three men wielding enormous shears and canvas bags come tromping out of the trees.
-    They looked at the two teenagers, and one of them coughs. “Just what are you kids doing here?”
+    “Honestly, you seem *built* for dangling,” you shrug. “Consider it interval training.”
+    From deeper in the forest, heavy footsteps echo. The monster howls in panic.
+    Three men emerge, wielding comically huge shears and canvas bags labelled *Property of Monster Management Agency*.
+    One squints at you. “Evening, campers. Problem?”
   choices:
     "1":
       description: Face the unknown men
       next_scene: face_unknown_men
     "2":
       description: Flee and regroup
-      next_scene: monster_discovery
-
+      next_scene: campsite_return
+    "3":
+      description: Taunt the monster
+      next_scene: monster_attack
+    "4":
+      description: Offer to help the agency
+      next_scene: join_agency
 
 help_monster_again:
   text: |
-    More footsteps began to echo from deeper in the woods, and you glance at Livia.
-    You quickly cut the sheep-man down once again, then drag him into a patch of nearby brush.
-    With that, you turn and run, fleeing desperately back down toward your car.
-    After all… If a monster was scared of something, what would the two of you be able to do against it?
+    More footsteps thunder closer. You glance at Livia, then slice the rope once more and drag the woolly fellow into a bush.
+    “Change of address,” you whisper. The three of you sprint toward the car—the monster squealing like defective bagpipes.
   choices:
     "1":
-      description: The end!
-      next_scene:
-
+      description: Drive away heroically
+      next_scene: end_success
+    "2":
+      description: Offer the monster a ride home
+      next_scene: end_roommate
 
 face_unknown_men:
   text: |
-    “We’re… Ahh… What are you doing here?” You counter.
-    “We’re with the Monster Management Agency.” The leaner shrugs. “It’s our job to catch and shear this guy ever year, and dehorn him if necessary."
-    "Keeps him from getting all wooly and scary, which, of course, cuts down on the number of reported monster sightings,
-     the number of people who get lost in the woods trying to run away from him, and so on."
-    "We’ll only be a few moments, you two can run along.”
+    “We’re… uh… what are *you* doing here?” you counter, excellent deflection.
+    “Monster Management Agency,” says the leanest one, flashing a badge shaped like a terrified goat.
+    “Annual shear and dehorn. Cuts down on reported monster sightings, panicked hikers, yadda yadda. Give us five minutes, you’ll get the woods back un‑haunted.”
   choices:
     "1":
       description: Stand by and watch
       next_scene: witness_monster_shearing
+    "2":
+      description: Move along quietly
+      next_scene: campsite_return
+    "3":
+      description: Ask about job openings
+      next_scene: join_agency
 
 
-witness_monster_shearing:
+# === Job‑openings branch ===
+join_agency:
   text: |
-    You and Livia watch, unable to believe what you are seeing, as the three men set upon the monster, and soon enough have him sheared.
-    They then cut him down, and he dashes away in shame.
-    With that, the three agents leave, and you and Livia were left standing in the woods.
-    It is a story that you will never be able to get out of your head… Even if you don't even believe it yourself at this time.
+    “Monster Management Agency, you say?” Your eyes shine like someone
+    just mentioned free merch.  
+    The lead agent sighs and produces a clipboard roughly the size of
+    a door. “Form 482‑B: *Volunteer Cryptid Wrangler.* Sign nowhere,
+    initial everywhere.”  
+    Bureaucracy, you realise, is simply horror wearing bifocals.
+  choices:
+    "1":
+      description: Wade into the paperwork
+      next_scene: bureaucratic_nightmare
+    "2":
+      description: On second thought, back away slowly
+      next_scene: campsite_return
+
+bureaucratic_nightmare:
+  text: |
+    Three hours, two existential crises and one mandated coffee break
+    later, you’re still stuck on question 1:  
+    **“Do you currently possess horns? (Y/N)”**  
+    While you debate pen colours, the agents shear the monster again,
+    finish the tidy‑up and clock off.  
+    They leave you an honorary rejection letter and a complimentary
+    ball‑point. Achievement unlocked: *Administrative Adventure*.
   choices:
     "1":
       description: The end!
+      next_scene: end_internship
+
+end_internship:
+  text: |
+    You never caught a monster, but your filing system is legendary.
+    The framed rejection letter on your wall reminds you that sometimes
+    the real adventure is the administrative backlog we create along
+    the way.
+  choices:
+    "1":
+      description: Restart the adventure
+      next_scene: start
+    "2":
+      description: Quit
       next_scene:
+
+# === Viral‑selfie ending ===
+end_viral:
+  text: |
+    Overnight your monster selfie detonates on social‑media.  
+    By breakfast you’re fielding sponsorship offers from antihistamine
+    brands and knit‑wear startups (“Wraith‑Wool™— frightfully cosy!”).  
+    The monster—now an influencer—streams reaction videos to lawn‑mowers.
+    Fame smells faintly of barnyard, but you’re rich enough to buy
+    industrial‑strength air‑freshener.
+  choices:
+    "1":
+      description: Restart the adventure
+      next_scene: start
+    "2":
+      description: Quit
+      next_scene:
+
+# === Heroic getaway ending ===
+end_success:
+  text: |
+    Panting, you and Livia dive into the car. You didn’t capture
+    the monster, but you saved him from the world’s most aggressive
+    barbers.  
+    As the Woods of Darkness shrink in the rear‑view mirror, you realise
+    true heroism sometimes smells like wet sheep—and that’s okay.
+  choices:
+    "1":
+      description: Restart the adventure
+      next_scene: start
+    "2":
+      description: Quit
+      next_scene:
+
+# === Room‑mate ending ===
+end_roommate:
+  text: |
+    Against every sensible instinct, you bundle the woozy sheep‑man into
+    the back seat.  
+    Weeks later your apartment smells like an artisanal petting‑zoo,
+    but rent is halved and he cooks a mean nettle stew.  
+    The HOA is baffled, the media intrigued, and you… you wouldn’t trade
+    your new wool‑covered couch‑mate for the world.
+  choices:
+    "1":
+      description: Restart the adventure
+      next_scene: start
+    "2":
+      description: Quit
+      next_scene:
+
+
+# === New hub for any later returns ===
+campsite_return:
+  text: |
+    You stumble back into the campground at an hour best measured
+    in yawns. The tents are still standing, though the *Spooky
+    Shenanigans* sign now sports neat bite‑marks—either a chainsaw
+    or something with terrific dental hygiene.  
+    Livia exhales. “Home grim home.”  
+    The clearing is quiet … for the next few seconds, at least.
+  choices:
+    "1":
+      description: Check supplies and regroup
+      next_scene: regroup_plan
+    "2":
+      description: Collapse straight into the tent
+      next_scene: to_the_tents
+    "3":
+      description: Venture back out—monsters won’t hunt themselves
+      next_scene: investigate_the_noise
+
+regroup_plan:
+  text: |
+    Inventory time: half a bag of marshmallows, one flashlight on
+    20 % battery, and Livia’s patience at roughly 4 %.  
+    Clearly a flawless foundation for Round Two.
+  choices:
+    "1":
+      description: Set another monster trap
+      next_scene: make_trap
+    "2":
+      description: Psych up with another ghost story
+      next_scene: campfire_story
+    "3":
+      description: Decide you’re done—head for the car
+      next_scene: end_success
