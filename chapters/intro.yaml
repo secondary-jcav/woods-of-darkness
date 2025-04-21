@@ -2,8 +2,8 @@ start:
   text: |
     “Ahh, here we are.” You step out of the car and take a deep breath. 
     The pines hit your nostrils like over‑enthusiastic air‑freshener, and somewhere a crow coughs apologetically.
-    Livia, still buckled in the passenger seat, watches with the weary stoicism of someone who lost a bet they don’t remember making.
-    Looming above is the weather‑beaten sign **Woods of Darkness**; a smaller hand‑painted notice underneath promises *Now with 30 % more darkness – Money‑back guarantee!* 
+    Livia, still buckled in the passenger seat, watches with the weary stoicism of someone who lost a bet they don't remember making.
+    Looming above is the weather‑beaten sign **Woods of Darkness**; a smaller hand‑painted notice underneath promises *Now with 30% more darkness – Money‑back guarantee!* 
     You clap your hands. Adventure, or at least an anecdote for next Thanksgiving, awaits.
   choices:
     "1":
@@ -15,10 +15,10 @@ start:
 
 livia_intro:
   text: |
-    “I still don’t get why it’s called the ‘Woods of Darkness.’” Livia climbs out of the passenger seat,
+    “I still don't get why it’s called the ‘Woods of Darkness.’” Livia climbs out of the passenger seat,
     immediately shading her eyes as though the trees might dim the sun on cue.
     She circles to the trunk and begins unloading camping supplies with the air of someone performing community service.
-    “Honestly, it’s just an ordinary patch of woods—minus the hysterical marketing.”
+    “Honestly, it's just an ordinary patch of woods—minus the hysterical marketing.”
   choices:
     "1":
       description: Explain about the woods
@@ -29,7 +29,7 @@ monster_description:
     “An ordinary patch of woods *home to the most fearsome monster the world has ever seen!*” you announce, grin stretching wider than health guidelines recommend.
     “My grandpa told me all about it! It has horns, and a thick fleece so matted with branches, leaves, and the *bones of its victims* that it probably gets HBO for free.”
     Livia snorts. “Your grandpa also claims pigeons are government drones. Color me skeptical.”
-    “In any case,” she sighs, heaving a backpack onto her shoulders, “we’re here. You dragged me out. Whoopee. Now, where are we camping?"
+    “In any case,” she sighs, heaving a backpack onto her shoulders, “we're here. You dragged me out. Whoopee. Now, where are we camping?"
   choices:
     "1":
       description: The campsite!
@@ -40,8 +40,8 @@ monster_description:
 
 campsite:
   text: |
-    “Oh, we’re camping in the *designated* campsite,” you declare, finger raised like a tour guide nobody hired.
-    “After all, that’s clearly where a monster is most likely to attack—paperwork’s easier.”
+    “Oh, we're camping in the *designated* campsite,” you declare, finger raised like a tour guide nobody hired.
+    “After all, that’s clearly where a monster is most likely to attack—paperwork's easier.”
     Livia rolls her eyes but follows you. Soon, your tents are pitched in a clearing marked with a cute sign reading *‘Official Area of Spooky Shenanigans’*.
   choices:
     "1":
@@ -60,7 +60,7 @@ campsite:
 the_woods:
   text: |
     “We’re going straight to the heart of the woods!” you proclaim.
-    “That’s where we’ll spot the monster casually jogging its evening 5K.”
+    “That's where we'll spot the monster casually jogging its evening 5K.”
     Livia raises a brow. “And if we get a fine for camping off‑grid?”
     “Adds authenticity!” You march into the gloom, Livia muttering about bail money behind you.
   choices:
@@ -90,7 +90,7 @@ camping_in_the_woods:
 campfire_story:
   text: |
     You strike a single dramatic match and hold it beneath your chin. Shadows pirouette across the pines like tipsy ballerinas.
-    “Gather round, Livia,” you whisper. “Behold the tragic saga of *The Woolen Wraith Who Couldn’t Get a Date*.”
+    “Gather round, Livia,” you whisper. “Behold the tragic saga of *The Woolen Wraith Who Couldn't Get a Date*.”
     She groans but sits anyway—because the alternative is assembling the camp stove.
   choices:
     "1":
@@ -156,7 +156,7 @@ make_trap:
 monster_discovery:
   text: |
     You sweep your flashlight forward. Hanging upside‑down from a snare is a creature with the lower body of a sheep and the upper body of a man—nature’s patch note nobody asked for.
-    “Get me down!” it bleats, flailing. “I don’t want to be *eaten!*”
+    “Get me down!” it bleats, flailing. “I don't want to be *eaten!*”
   choices:
     "1":
       description: Cut the poor thing down
@@ -215,7 +215,7 @@ leave_monster_dangling:
 help_monster_again:
   text: |
     More footsteps thunder closer. You glance at Livia, then slice the rope once more and drag the woolly fellow into a bush.
-    “Change of address,” you whisper. The three of you sprint toward the car—the monster squealing like defective bagpipes.
+    “Change of address”, you whisper. The three of you sprint toward the car—the monster squealing like defective bagpipes.
   choices:
     "1":
       description: Drive away heroically
@@ -226,9 +226,9 @@ help_monster_again:
 
 face_unknown_men:
   text: |
-    “We’re… uh… what are *you* doing here?” you counter, excellent deflection.
+    “We're… uh… what are *you* doing here?” you counter, excellent deflection.
     “Monster Management Agency,” says the leanest one, flashing a badge shaped like a terrified goat.
-    “Annual shear and dehorn. Cuts down on reported monster sightings, panicked hikers, yadda yadda. Give us five minutes, you’ll get the woods back un‑haunted.”
+    “Annual shear and dehorn. Cuts down on reported monster sightings, panicked hikers, yadda yadda. Give us five minutes, you'll get the woods back un‑haunted.”
   choices:
     "1":
       description: Stand by and watch
@@ -244,10 +244,10 @@ face_unknown_men:
 # === Job‑openings branch ===
 join_agency:
   text: |
-    “Monster Management Agency, you say?” Your eyes shine like someone
+    “Monster Management Agency, you say?” Your eyes shine like someone
     just mentioned free merch.  
     The lead agent sighs and produces a clipboard roughly the size of
-    a door. “Form 482‑B: *Volunteer Cryptid Wrangler.* Sign nowhere,
+    a door. “Form 482‑B: *Volunteer Cryptid Wrangler.* Sign nowhere,
     initial everywhere.”  
     Bureaucracy, you realise, is simply horror wearing bifocals.
   choices:
@@ -261,8 +261,8 @@ join_agency:
 bureaucratic_nightmare:
   text: |
     Three hours, two existential crises and one mandated coffee break
-    later, you’re still stuck on question 1:  
-    **“Do you currently possess horns? (Y/N)”**  
+    later, you’re still stuck on question 1:  
+    **“Do you currently possess horns? (Y/N)”**  
     While you debate pen colours, the agents shear the monster again,
     finish the tidy‑up and clock off.  
     They leave you an honorary rejection letter and a complimentary
@@ -290,10 +290,10 @@ end_internship:
 end_viral:
   text: |
     Overnight your monster selfie detonates on social‑media.  
-    By breakfast you’re fielding sponsorship offers from antihistamine
+    By breakfast you're fielding sponsorship offers from antihistamine
     brands and knit‑wear startups (“Wraith‑Wool™— frightfully cosy!”).  
     The monster—now an influencer—streams reaction videos to lawn‑mowers.
-    Fame smells faintly of barnyard, but you’re rich enough to buy
+    Fame smells faintly of barnyard, but you're rich enough to buy
     industrial‑strength air‑freshener.
   choices:
     "1":
@@ -306,7 +306,7 @@ end_viral:
 # === Heroic getaway ending ===
 end_success:
   text: |
-    Panting, you and Livia dive into the car. You didn’t capture
+    Panting, you and Livia dive into the car. You didn't capture
     the monster, but you saved him from the world’s most aggressive
     barbers.  
     As the Woods of Darkness shrink in the rear‑view mirror, you realise
@@ -326,7 +326,7 @@ end_roommate:
     the back seat.  
     Weeks later your apartment smells like an artisanal petting‑zoo,
     but rent is halved and he cooks a mean nettle stew.  
-    The HOA is baffled, the media intrigued, and you… you wouldn’t trade
+    The HOA is baffled, the media intrigued, and you… you wouldn't trade
     your new wool‑covered couch‑mate for the world.
   choices:
     "1":
@@ -354,14 +354,14 @@ campsite_return:
       description: Collapse straight into the tent
       next_scene: to_the_tents
     "3":
-      description: Venture back out—monsters won’t hunt themselves
+      description: Venture back out—monsters won't hunt themselves
       next_scene: investigate_the_noise
 
 regroup_plan:
   text: |
     Inventory time: half a bag of marshmallows, one flashlight on
-    20 % battery, and Livia’s patience at roughly 4 %.  
-    Clearly a flawless foundation for Round Two.
+    20% battery, and Livia’s patience at roughly 4%.  
+    Clearly a flawless foundation for Round Two.
   choices:
     "1":
       description: Set another monster trap
